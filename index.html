@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Joseph Chou">
+    <meta name="description" content="My portfolio website.">
+    <meta name="keywords" content="portfolio, web development, web design">
+
+    <!-- change theme color on mobile devices -->
+    <meta name="theme-color" content="#263238">
+    <meta name="msapplication-navbutton-color" content="#263238">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#263238">
+
+    <title>Joseph Chou</title>
+
+    <!-- frameworks and scripts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="./js/jquery.matchHeight.js" type="text/javascript"></script>
+
+    <!-- fonts/icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,200,400,400i,700">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+
+    <!-- background particles! -->
+    <div id="particles-js"></div>
+
+
+    <nav class="nav">
+        <!-- navigation bar-->
+        <div class="nav-wrapper z-depth-5">
+
+            <!-- skip to content link for accessibility -->
+            <div class="skip-to-content">
+                <a href="#main" class="skip-to-content">Jump to content</a>
+            </div>
+
+            <img class="brand-logo center" src="./img/logo.png" alt="Joseph Chou logo" aria-hidden="true">
+
+            <!-- hamburger menu for small screens -->
+            <a href="#" data-activates="mobile-sidenav" class="button-collapse hide-on-large-only">
+                <i class="material-icons left" aria-label="Navigation menu">menu</i>
+            </a>
+
+            <!-- regular navigation for large screens and screen readers -->
+            <ul class="left hide-on-med-and-down large-nav-links">
+                <li>
+                    <a href="#">
+                        <i class="material-icons left" aria-hidden="true">home</i>Home</a>
+                </li>
+                <li>
+                    <a href="./projects.html">
+                        <i class="material-icons left" aria-hidden="true">laptop</i>Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <i class="material-icons left" aria-hidden="true">phone</i>Contact</a>
+                </li>
+            </ul>
+
+            <!-- pop-out navigation links for small screens -->
+            <ul class="side-nav hide-on-large-only" id="mobile-sidenav">
+                <li>
+                    <a href="#" tabindex="-1">
+                        <i class="material-icons left" aria-hidden="true">home</i>Home</a>
+                </li>
+                <li>
+                    <a href="./projects.html" tabindex="-1">
+                        <i class="material-icons left" aria-hidden="true">laptop</i>Projects</a>
+                </li>
+                <li>
+                    <a href="#contact" tabindex="-1">
+                        <i class="material-icons left" aria-hidden="true">phone</i>Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="z-depth-4">
+        <div class="container">
+            <h1>Joseph Chou</h1>
+
+            <!-- randomized tag line -->
+            <p id="tagline">
+                content creator
+            </p>
+
+            <!-- aesthetic button to jump to content, hide on screen readers due to redundancy -->
+            <a href="#about" tabindex="-1" class="btn-floating btn-large waves-effect waves-light z-depth-5 pulse jump-button" role="button"
+                aria-hidden="true">
+                <i class="material-icons" aria-hidden="true">keyboard_arrow_down</i>
+            </a>
+        </div>
+    </header>
+
+    <main id="main">
+        <div class="row container main-blocks">
+
+            <!-- ABOUT block -->
+            <div class="col l6 s12">
+                <div class="content-block z-depth-3 match-height">
+                    <section id="about">
+                        <h2>about</h2>
+                        <p>
+                            Hello! My name is Joseph Chou. I am currently a sophomore at the University of Washington studying informatics.
+                        </p>
+
+                        <p>
+                            I'm interested in data science and visualization, along with interaction design, web development, and computational linguistics.
+                            I'm also interested in environmentalism and how to effectively promote environmental sustainability.
+                        </p>
+                    </section>
+                </div>
+            </div>
+
+            <!-- SKILLS block -->
+            <div class="col l6 s12">
+                <div class="content-block z-depth-3 match-height">
+                    <section id="skills">
+                        <h2>skills</h2>
+
+                        <div id="skill-container">
+                            <div class="row">
+                                <div class="col l4 s6 m3">
+                                    <div class="skill-box">
+                                        Java
+                                        <br>
+                                        <div class="progress">
+                                            <div class="determinate" style="width: 50%">50% proficient</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col l4 s6 m3">
+                                    <div class="skill-box">
+                                        R
+                                        <br>
+                                        <div class="progress">
+                                            <div class="determinate" style="width: 60%">60% proficient</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col l4 s6 m3">
+                                    <div class="skill-box">
+                                        HTML
+                                        <br>
+                                        <div class="progress">
+                                            <div class="determinate" style="width: 75%">75% proficient</div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col l4 s6 m3">
+                                    <div class="skill-box">
+                                        CSS
+                                        <br>
+                                        <div class="progress">
+                                            <div class="determinate" style="width: 55%">55% proficient</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col l4 s6 m3">
+                                    <div class="skill-box">
+                                        Node.js
+                                        <br>
+                                        <div class="progress">
+                                            <div class="determinate" style="width: 40%">40% proficient</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col l4 s6 m3">
+                                    <div class="skill-box">
+                                        Javascript
+                                        <br>
+                                        <div class="progress">
+                                            <div class="determinate" style="width: 25%">25% proficient</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col l4 s6 m3">
+                                    <div class="skill-box">
+                                        SQL
+                                        <br>
+                                        <div class="progress">
+                                            <div class="determinate" style="width: 10%">10% proficient</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col l4 s6 m3">
+                                    <div class="skill-box">
+                                        Lua
+                                        <br>
+                                        <div class="progress">
+                                            <div class="determinate" style="width: 60%">60% proficient</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- EDUCATION block -->
+            <div class="col s12">
+                <div class="content-block z-depth-3 match-height" id="education-container">
+                    <section id="education">
+                        <h2>education</h2>
+                        <ul class="collapsible" data-collapsible="accordion" id="education-collapsible">
+
+                            <!-- UW -->
+                            <li>
+                                <div class="collapsible-header" role="button" aria-expanded="false">
+                                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+                                    <h3>University of Washington</h3>
+                                </div>
+                                <div class="collapsible-body">
+                                    <img src="./img/ischool-logo.png" class="school-logo responsive-img" alt="UW Information School logo">
+                                    <p class="degree">Bachelor of Science in Informatics, Data Science track</p>
+                                    <p class="time">2016 - present</p>
+
+                                    <h4>coursework</h4>
+                                    <ul>
+                                        <li>INFO 200 - Intellectual Foundations of Informatics</li>
+                                        <li>INFO 201 - Technical Foundations</li>
+                                        <li>INFO 340 - Introduction to Relational Database Management Systems</li>
+                                        <li>INFO 343 - Client-Side Web Development</li>
+                                        <li>INFO 360 - Design Thinking</li>
+                                        <li>CSE 142 - Computer Programming I</li>
+                                        <li>CSE 143 - Computer Programming II</li>
+                                        <li>AMATH 301 - Beginning Scientific Computing</li>
+                                        <li>HCDE 201 - Explorations in Human Centered Design</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- UNR -->
+                            <li>
+                                <div class="collapsible-header" role="button" aria-expanded="false">
+                                    <i class="fa fa-calculator" aria-hidden="true"></i>
+                                    <h3>University of Nevada, Reno</h3>
+                                </div>
+                                <div class="collapsible-body">
+                                    <img src="./img/unr-logo.png" class="school-logo responsive-img" alt="University of Nevada, Reno logo">
+                                    <p class="degree">Concurrent with middle and high school</p>
+                                    <p class="time">2011 - 2016</p>
+
+                                    <h4>coursework</h4>
+                                    <ul>
+                                        <li>MATH 285 - Differential Equations</li>
+                                        <li>MATH 310 - Intro to Analysis I</li>
+                                        <li>MATH 311 - Intro to Analysis II</li>
+                                        <li>MATH 330 - Linear Algebra</li>
+                                        <li>MATH 352 - Probablity and Statistics</li>
+                                        <li>MATH 373 - Theory of Positive Integers</li>
+                                        <li>MATH 466 - Numerical Methods</li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                            <!-- Davidson Academy -->
+                            <li>
+                                <div class="collapsible-header" role="button" aria-expanded="false">
+                                    <i class="fa fa-institution" aria-hidden="true"></i>
+                                    <h3>The Davidson Academy of Nevada</h3>
+                                </div>
+                                <div class="collapsible-body">
+                                    <img src="./img/da-logo.png" class="school-logo responsive-img" alt="Davidson Academy of Nevada logo">
+                                    <p class="degree">Middle School, High School Diploma with an emphasis in Computer Science</p>
+                                    <p class="time">2010 - 2016</p>
+
+                                    <h4>activities</h4>
+                                    <ul>
+                                        <li>Vice president of Math Club, 2014-2016</li>
+                                        <li>Volunteer at Food Bank of Northern Nevada, 2014-2016</li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+
+
+            <!-- PLANS block -->
+            <div class="col l6 s12">
+                <div class="content-block z-depth-3 match-height">
+                    <section id="plans">
+                        <h2>plans</h2>
+                        <p>
+                            Right now, I'm taking courses on client-side web development, database management systems, and design methods. Throughout
+                            the rest of the year, I'm planning on taking courses on data science, data structures and algorithms,
+                            and server-side web development.
+                        </p>
+
+                        <p>
+                            I'm planning on building more interactive data visualizations in R on a variety of topics I find interesting, including pollution,
+                            sustainable materials management, and the education system. I'm also interested in designing
+                            solutions for common problems such as excessive computer usage.
+                        </p>
+                    </section>
+                </div>
+            </div>
+
+            <!-- PERSONAL block -->
+            <div class="col l6 s12">
+                <div class="content-block z-depth-3 match-height">
+                    <section id="professional">
+                        <h2>personal</h2>
+                        <p>
+                            In my free time, I enjoy playing a wide variety of video games, primarily rhythm games. Lately, I've been playing a lot of
+                            <em>Sound Voltex</em>,
+                            <em>Dance Dance Revolution</em>, and
+                            <em>Sid Meier's Civilization V</em>.
+                        </p>
+
+                        <p>
+                            I'm also a big fan of comedy podcasts; some of my favorites include
+                            <a href="http://www.earwolf.com/show/big-grande-teachers-lounge/">Big Grande's Teacher's Lounge</a>,
+                            <a href="http://www.earwolf.com/show/hollywood-handbook/">Hollywood Handbook</a>, and
+                            <a href="http://www.feralaudio.com/show/doughboys/">Doughboys</a>.
+                        </p>
+
+                        <p>
+                            I also enjoy binge-watching television series. Some recent series I've enjoyed include
+                            <em>Black Mirror</em>,
+                            <em>Veep</em>, and
+                            <em>Nathan For You</em>.
+                        </p>
+
+                        <p>
+                            In terms of hobbies, I've experimented with music composition and production in FL Studio. I'm also interested in learning
+                            2D game development in Unity.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer z-depth-1">
+        <div class="container">
+            <div class="row">
+
+                <!-- social links -->
+                <div class="col m6 s12" id="contact">
+                    <h1>contact</h1>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/jchou8">
+                                <i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+                        </li>
+
+                        <li>
+                            <a href="https://twitter.com/_jchou">
+                                <i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.linkedin.com/in/jchou8/">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+                        </li>
+
+                        <li>
+                            <a href="mailto:jchou8@uw.edu">
+                                <i class="fa fa-envelope" aria-hidden="true"></i> jchou8@uw.edu</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- links to resources that helped -->
+                <div class="col m6 s12">
+                    <h1>credits</h1>
+                    <ul>
+                        <li>
+                            <a href="http://materializecss.com/">Materialize</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/VincentGarreau/particles.js/">particles.js</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 Joseph Chou
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

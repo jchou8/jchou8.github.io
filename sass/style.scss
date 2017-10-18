@@ -1,0 +1,318 @@
+// Color palette
+$primary: #37474f;
+$plight: #62727b;
+$pdark: #102027;
+$pdark2: #111111;
+$pdark3: #1c313a;
+$pdark4: #263238;
+$accent: #bef67a;
+$highlight: #e1ffb1;
+$link: #cfff91;
+$linkhover: #9eff28;
+$button: #4b830d;
+
+// Overall page styling
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+
+    background-color: $primary;
+    color: white;
+    font-size: 1.2rem;
+}
+
+a {
+    color: $link;
+
+    &:hover, &:focus, &:active {
+        color: $linkhover;
+    }
+}
+
+// Make sure things don't get weird with super skinny screens
+.container {
+    min-width: 300px;
+}
+
+// Basic header text styling
+h1, h2, h3, h4 {
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3, h4 {
+    font-size: 1.5rem;
+}
+
+// Navigation bar
+.nav-wrapper {
+    background-color: $pdark;
+    white-space: nowrap;
+
+    .large-nav-links li a {
+        &:hover, &:focus, &:active {
+            color: $highlight;
+            border-bottom: .2rem solid $accent;
+        }
+    }
+
+    #mobile-sidenav {
+        
+        background-color: $pdark2;
+
+        a, .material-icons {
+            color: white;
+        }
+        
+        a:hover, a:focus, a:active {
+            color: $accent;
+        }
+    }
+}
+
+// If hidden, make skip button appear when tabbed onto
+.skip-to-content a {
+    position: absolute;
+    left: -10000px;
+    top: -1.5rem;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    
+    &:focus, &:active {
+        left: 0px;
+        width: auto;
+        height: auto;
+        overflow: visible;
+    }
+}
+
+// Resize and center logo
+.brand-logo {
+    max-height: 50%;
+    margin-top: 1rem;
+}
+
+// Big top banner
+header {
+    background-color: $pdark2;
+    text-align: center;
+    padding: 2rem 0;
+    
+    h1 {
+        margin-top: 2rem;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+        line-height: .5rem;
+    }
+    
+    #tagline {
+        font-size: 1.5rem;
+        font-weight: 100;
+        margin-top: 0;
+    }
+
+    .jump-button {
+        background-color: $primary;
+
+        &:hover, &:focus, &:active {
+            background-color: $button;
+        }
+    }
+}
+
+// Blocks of content in main section
+.content-block {
+    background-color: $pdark2;
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+.main-blocks {
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+
+    .col {
+        flex: auto;
+    }
+
+    // project cards
+    .card {
+        margin-top: 1.5rem;
+        background-color: $pdark2;
+        border-radius: 3px;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        h2 {
+            margin: 0rem auto;
+        }
+        
+        .time {
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+// Skill boxes
+#skill-container {
+    text-align: center;
+}
+
+.skill-box {
+    display: inline-block;
+    position: relative;
+    width: 6.5rem;
+    height: 6.5rem;
+    margin: 0 auto 2rem;
+
+    text-align: center;
+    font-weight: 800;
+    font-size: 1.1rem;
+    padding: 1.75rem 0 0;
+
+    border: 2px solid $plight;
+    background-color: $pdark2;
+    
+    // turn into a circle when hovered
+    -webkit-transition: background-color .25s ease-out, border-radius .25s ease-out;
+    transition: background-color .25s ease-out, border-radius .25s ease-out;
+
+    &:hover {
+        background-color: $pdark4;
+        border-radius: 100%
+    }
+
+    // format progress bars
+    .progress {
+        display: inline-block;
+        width: 85%;
+        text-align: center;
+        background-color: $primary;
+
+        // Make skill text only readable with screen readers
+        .determinate {
+            background-color: $linkhover;
+            font-size: 0px;
+        }
+    }
+}
+
+// Education block
+#education-container {
+    .collapsible {
+        border-color: $pdark2;
+    }
+
+    .collapsible-header {
+        background-color: $primary;
+        border-color: $pdark2;
+
+        .fa {
+            display: inline-block;
+            vertical-align: center;
+        }
+
+        h3 {
+            display: inline-block;
+            font-size: 1.2rem;
+            font-weight: 400;
+            margin: auto 0;
+        }
+    }
+
+    .collapsible-body {
+        background-color: $pdark4;
+        border-color: $pdark2;
+
+        li {
+            list-style: square inside;
+            font-size: 1rem;
+        }
+    }
+
+    .school-logo {
+        float: right;
+        max-width: 25%;
+        height: auto;
+        max-height: 10rem;
+
+        margin-left: 1rem;
+    }
+}
+
+.degree {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+.time {
+    font-size: 1rem;
+    font-style: italic;
+    margin-top: 0rem;
+}
+
+// Footer credits and links
+.page-footer {
+    background-color: $pdark4;
+    font-size: 1.25rem;
+
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .footer-copyright {
+        background-color: darken($pdark4, 2%);
+        font-size: 1rem;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+
+// Particle positioning in background
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    z-index: -10;
+}
+
+// Significantly expand the header on larger screens and add banner image
+@media (min-width: 768px)
+{
+    header {
+        background-image: url('../img/banner-small.png');
+        background-size: 300%;
+
+        padding: 6rem 0;
+
+        h1 {
+            font-size: 5rem;
+        }
+        
+        #tagline {
+            font-size: 3rem;
+        }
+    }
+}

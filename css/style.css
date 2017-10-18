@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #37474f;
+  color: white;
+  font-size: 1.2rem; }
+
+a {
+  color: #cfff91; }
+  a:hover, a:focus, a:active {
+    color: #9eff28; }
+
+.container {
+  min-width: 300px; }
+
+h1, h2, h3, h4 {
+  font-weight: 100; }
+
+h1 {
+  font-size: 3rem; }
+
+h2 {
+  font-size: 2rem; }
+
+h3, h4 {
+  font-size: 1.5rem; }
+
+.nav-wrapper {
+  background-color: #102027;
+  white-space: nowrap; }
+  .nav-wrapper .large-nav-links li a:hover, .nav-wrapper .large-nav-links li a:focus, .nav-wrapper .large-nav-links li a:active {
+    color: #e1ffb1;
+    border-bottom: 0.2rem solid #bef67a; }
+  .nav-wrapper #mobile-sidenav {
+    background-color: #111111; }
+    .nav-wrapper #mobile-sidenav a, .nav-wrapper #mobile-sidenav .material-icons {
+      color: white; }
+    .nav-wrapper #mobile-sidenav a:hover, .nav-wrapper #mobile-sidenav a:focus, .nav-wrapper #mobile-sidenav a:active {
+      color: #bef67a; }
+
+.skip-to-content a {
+  position: absolute;
+  left: -10000px;
+  top: -1.5rem;
+  width: 1px;
+  height: 1px;
+  overflow: hidden; }
+  .skip-to-content a:focus, .skip-to-content a:active {
+    left: 0px;
+    width: auto;
+    height: auto;
+    overflow: visible; }
+
+.brand-logo {
+  max-height: 50%;
+  margin-top: 1rem; }
+
+header {
+  background-color: #111111;
+  text-align: center;
+  padding: 2rem 0; }
+  header h1 {
+    margin-top: 2rem;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    line-height: .5rem; }
+  header #tagline {
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-top: 0; }
+  header .jump-button {
+    background-color: #37474f; }
+    header .jump-button:hover, header .jump-button:focus, header .jump-button:active {
+      background-color: #4b830d; }
+
+.content-block {
+  background-color: #111111;
+  margin-top: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px; }
+
+.main-blocks {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start; }
+  .main-blocks .col {
+    flex: auto; }
+  .main-blocks .card {
+    margin-top: 1.5rem;
+    background-color: #111111;
+    border-radius: 3px; }
+    .main-blocks .card img {
+      width: 100%;
+      height: auto; }
+    .main-blocks .card h2 {
+      margin: 0rem auto; }
+    .main-blocks .card .time {
+      margin-bottom: 1rem; }
+
+#skill-container {
+  text-align: center; }
+
+.skill-box {
+  display: inline-block;
+  position: relative;
+  width: 6.5rem;
+  height: 6.5rem;
+  margin: 0 auto 2rem;
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.1rem;
+  padding: 1.75rem 0 0;
+  border: 2px solid #62727b;
+  background-color: #111111;
+  -webkit-transition: background-color .25s ease-out, border-radius .25s ease-out;
+  transition: background-color .25s ease-out, border-radius .25s ease-out; }
+  .skill-box:hover {
+    background-color: #263238;
+    border-radius: 100%; }
+  .skill-box .progress {
+    display: inline-block;
+    width: 85%;
+    text-align: center;
+    background-color: #37474f; }
+    .skill-box .progress .determinate {
+      background-color: #9eff28;
+      font-size: 0px; }
+
+#education-container .collapsible {
+  border-color: #111111; }
+#education-container .collapsible-header {
+  background-color: #37474f;
+  border-color: #111111; }
+  #education-container .collapsible-header .fa {
+    display: inline-block;
+    vertical-align: center; }
+  #education-container .collapsible-header h3 {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: auto 0; }
+#education-container .collapsible-body {
+  background-color: #263238;
+  border-color: #111111; }
+  #education-container .collapsible-body li {
+    list-style: square inside;
+    font-size: 1rem; }
+#education-container .school-logo {
+  float: right;
+  max-width: 25%;
+  height: auto;
+  max-height: 10rem;
+  margin-left: 1rem; }
+
+.degree {
+  font-size: 1.2rem;
+  margin: 0; }
+
+.time {
+  font-size: 1rem;
+  font-style: italic;
+  margin-top: 0rem; }
+
+.page-footer {
+  background-color: #263238;
+  font-size: 1.25rem; }
+  .page-footer h1 {
+    font-size: 1.75rem; }
+  .page-footer .footer-copyright {
+    background-color: #222d32;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center; }
+
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: -10; }
+
+@media (min-width: 768px) {
+  header {
+    background-image: url("../img/banner-small.png");
+    background-size: 300%;
+    padding: 6rem 0; }
+    header h1 {
+      font-size: 5rem; }
+    header #tagline {
+      font-size: 3rem; } }
+
+/*# sourceMappingURL=style.css.map */

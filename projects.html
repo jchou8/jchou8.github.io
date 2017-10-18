@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Joseph Chou">
+    <meta name="description" content="My portfolio website.">
+    <meta name="keywords" content="portfolio, web development, web design, projects">
+
+    <!-- change theme color on mobile devices -->
+    <meta name="theme-color" content="#263238">
+    <meta name="msapplication-navbutton-color" content="#263238">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#263238">
+
+    <title>Projects</title>
+
+    <!-- frameworks and scripts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="./js/jquery.matchHeight.js" type="text/javascript"></script>
+
+    <!-- fonts/icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,200,400,400i,700">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="./img/favicon.png">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/projects.js"></script>
+</head>
+
+<body>
+
+    <!-- background particles! -->
+    <div id="particles-js"></div>
+
+    <nav class="nav">
+
+        <!-- navigation bar-->
+        <div class="nav-wrapper z-depth-5">
+
+            <!-- skip to content link for accessibility -->
+            <div class="skip-to-content">
+                <a href="#main" class="skip-to-content">Jump to content</a>
+            </div>
+
+            <img class="brand-logo center" src="./img/logo.png" alt="Joseph Chou logo" aria-hidden="true">
+
+            <!-- hamburger menu for small screens -->
+            <a href="#" data-activates="mobile-sidenav" class="button-collapse hide-on-large-only">
+                <i class="material-icons left" aria-label="Navigation menu">menu</i>
+            </a>
+
+            <!-- regular navigation for large screens and screen readers -->
+            <ul class="left hide-on-med-and-down large-nav-links">
+                <li>
+                    <a href="./index.html">
+                        <i class="material-icons left" aria-hidden="true">home</i>Home</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="material-icons left" aria-hidden="true">laptop</i>Projects</a>
+                </li>
+                <li>
+                    <a href="#contact">
+                        <i class="material-icons left" aria-hidden="true">phone</i>Contact</a>
+                </li>
+            </ul>
+
+            <!-- pop-out navigation links for small screens -->
+            <ul class="side-nav hide-on-large-only" id="mobile-sidenav">
+                <li>
+                    <a href="./index.html" tabindex="-1">
+                        <i class="material-icons left" aria-hidden="true">home</i>Home</a>
+                </li>
+                <li>
+                    <a href="#" tabindex="-1">
+                        <i class="material-icons left" aria-hidden="true">laptop</i>Projects</a>
+                </li>
+                <li>
+                    <a href="#contact" tabindex="-1">
+                        <i class="material-icons left" aria-hidden="true">phone</i>Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="z-depth-4">
+        <div class="container">
+            <h1>Projects</h1>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- Projects grid -->
+        <div class="row container main-blocks">
+
+            <!-- Portfolio Website -->
+            <div class="col l6 s12">
+                <div class="card hoverable match-height">
+                    <section id="website">
+                        <div class="card-image">
+                            <img class="materialboxed" src="./img/websitethumb.png" alt="A screenshot of the main page of this website.">
+                        </div>
+
+                        <div class="card-content">
+                            <h2>Personal Portfolio Website</h2>
+                            <p class="time">October 2017</p>
+                            <p>
+                                Over the course of about a week, I designed and built this website using the
+                                <a href="http://materializecss.com/">Materialize</a> framework. This involved designing around a variety of screen sizes, along
+                                with providing accessibility for screen readers. I also experimented with some simple Javascript
+                                to produce animated backgrounds and to enhance accessibility.
+                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Energy Visualization -->
+            <div class="col l6 s12">
+                <div class="card hoverable match-height">
+                    <section id="energy-viz">
+                        <div class="card-image">
+                            <img class="materialboxed" src="./img/energythumb.png" alt="A graph displaying US energy production from 1971 to 2014.">
+                        </div>
+
+                        <div class="card-content match-height">
+                            <h2>US Energy Data Visualization</h2>
+                            <p class="time">June 2017</p>
+                            <p>
+                                This report analyzes data from the
+                                <a href="https://www.eia.gov/state/seds/seds-data-complete.php?sid=US#CompleteDataFile">US Energy Information Administration</a> on energy consumption, production, and expenditures
+                                from 1960 to 2014. Using R, we cleaned, filtered, and analyzed the data, then produced various
+                                interactive visualizations and presented them in a web app.
+                            </p>
+                        </div>
+
+                        <div class="card-action">
+                            <a href="https://jchou.shinyapps.io/centertable-final-project/" target="_blank">View app</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <!-- Enter the Gungeon Wiki -->
+            <div class="col l6 s12">
+                <div class="card hoverable">
+                    <section id="gungeon-wiki">
+                        <div class="card-image">
+                            <img class="materialboxed" src="./img/wikithumb.PNG" alt="A table of guns from the game Enter the Gungeon.">
+                        </div>
+
+                        <div class="card-content match-height">
+                            <h2>Enter the Gungeon Wiki</h2>
+                            <p class="time">February 2015 - present</p>
+                            <p>
+                                Over the past couple of years, I have built and maintained a wiki for the video game
+                                <a href="http://store.steampowered.com/app/311690/Enter_the_Gungeon/">Enter the Gungeon</a>, a dungeon crawler rogue-lite. This has involved designing methods
+                                of presenting and organizing information, collecting and verifying data, and a lot of writing.
+                            </p>
+                        </div>
+
+                        <div class="card-action">
+                            <a href="https://enterthegungeon.gamepedia.com/Enter_the_Gungeon_Wiki" target="_blank">View site</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="page-footer z-depth-1">
+        <div class="container">
+            <div class="row">
+
+                <!-- social links -->
+                <div class="col m6 s12" id="contact">
+                    <h1>contact</h1>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/jchou8">
+                                <i class="fa fa-github" aria-hidden="true"></i> GitHub</a>
+                        </li>
+
+                        <li>
+                            <a href="https://twitter.com/_jchou">
+                                <i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+                        </li>
+
+                        <li>
+                            <a href="https://www.linkedin.com/in/jchou8/">
+                                <i class="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+                        </li>
+
+                        <li>
+                            <a href="mailto:jchou8@uw.edu">
+                                <i class="fa fa-envelope" aria-hidden="true"></i> jchou8@uw.edu</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- links to resources that helped -->
+                <div class="col m6 s12">
+                    <h1>credits</h1>
+                    <ul>
+                        <li>
+                            <a href="http://materializecss.com/">Materialize</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/VincentGarreau/particles.js/">particles.js</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-copyright">
+            <div class="container">
+                © 2017 Joseph Chou
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
