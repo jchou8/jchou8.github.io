@@ -1,2 +1,4 @@
 # jchou8.github.io
-Personal portfolio website
+This is my personal portfolio website.
+
+The site can be viewed at <https://jchou8.github.io/>.
